@@ -1,0 +1,283 @@
+/* .app-section {
+  padding: 6rem 2rem;
+  background: #e6eddf;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.app-content {
+  background: linear-gradient(135deg, #a8d5ba 0%, #7bc96f 100%);
+  padding: 3rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.app-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.app-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.app-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.app-btn:hover {
+  background: white;
+  color: #2d5016;
+}
+
+.phone-mockup {
+  text-align: center;
+}
+
+.phone-mockup img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .app-content h2 {
+    font-size: 2rem;
+  }
+} */
+
+/* ------------------------------------------------------------------ */
+
+
+
+
+.app-section {
+  background-color: #e6eddf;
+}
+
+.app-promotion {
+  background-color: rgba(164, 191, 134, 1);
+  align-self: center;
+  /* width: 1321px; */
+  width: 90%;
+  max-width: 100%;
+  padding-left: 76px;
+  border-radius: 32px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .app-promotion {
+    /* margin-top: 40px; */
+    padding-left: 20px;
+  }
+}
+
+.app-promotion-container {
+  gap: 20px;
+  display: flex;
+  background-color: #a4bf86;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-container {
+    flex-direction: column;
+    /* align-items: stretch; */
+  }
+}
+
+.app-promotion-content {
+  width: 41%;
+  background-color: #a4bf86;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-content {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.app-promotion-text {
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 60px;
+  background-color: #a4bf86;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-text {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.app-promotion-title {
+  color: rgba(15, 46, 20, 1);
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 60px;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-title {
+    font-size: 32px;
+    line-height: 56px;
+  }
+}
+
+.app-promotion-title-italic {
+  font-family: 'Playfair Display', -apple-system, Roboto, Helvetica, sans-serif;
+  font-style: italic;
+  color: rgba(15, 46, 20, 1);
+}
+
+.app-promotion-description {
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 27px;
+  margin-right: 25px;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-description {
+    margin-right: 10px;
+  }
+}
+
+.app-promotion-buttons {
+  margin-top: 18px;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-buttons {
+    max-width: 100%;
+  }
+}
+
+.app-store-container {
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .app-store-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.app-store-button {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .app-store-button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.app-store-image {
+  aspect-ratio: 3.39;
+  object-fit: contain;
+  width: 200px;
+  max-width: 100%;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+@media (max-width: 768px) {
+  .app-store-image {
+    margin-top: 40px;
+  }
+}
+
+.google-play-button {
+  width: 50%;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .google-play-button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.google-play-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 212px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .google-play-image {
+    margin-top: 28px;
+  }
+}
+
+.app-promotion-image-container {
+  width: 59%;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-image-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.app-promotion-image {
+  aspect-ratio: 1.11;
+  object-fit: contain;
+  width: 100%;
+  margin-top: -40px;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .app-promotion-image {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}

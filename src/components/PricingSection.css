@@ -1,0 +1,130 @@
+.pricing {
+    padding: 6rem 2rem;
+    background: #f8fdf4;
+  }
+
+  .pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .pricing h2 {
+    font-size: 2.5rem;
+    color: #2d5016;
+    margin-bottom: 1rem;
+  }
+
+  .pricing-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 4rem;
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+
+  .pricing-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .pricing-card.popular {
+    background: #2d5016;
+    color: white;
+    transform: scale(1.05);
+  }
+
+  .pricing-card.popular:hover {
+    transform: scale(1.05) translateY(-10px);
+  }
+
+  .popular-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #7bc96f;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .plan-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: inherit;
+  }
+
+  .plan-price {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: inherit;
+  }
+
+  .plan-duration {
+    opacity: 0.7;
+    margin-bottom: 2rem;
+  }
+
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    text-align: left;
+  }
+
+  .plan-features li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .pricing-card.popular .plan-features li {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .plan-button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .pricing-card:not(.popular) .plan-button {
+    background: #2d5016;
+    color: white;
+  }
+
+  .pricing-card:not(.popular) .plan-button:hover {
+    background: #1a3009;
+  }
+
+  .pricing-card.popular .plan-button {
+    background: white;
+    color: #2d5016;
+  }
+
+  .pricing-card.popular .plan-button:hover {
+    background: #f0f0f0;
+  }

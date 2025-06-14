@@ -1,0 +1,126 @@
+.team {
+  background: #e6eddf;
+}
+
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+  color: #2d5016;
+  margin-bottom: 4rem;
+  text-align: left;
+  margin-left: 0.5rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5rem;
+  align-items: start;
+  width: 100%;
+  max-width: 1353px;
+  margin-top: 71px;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.team-member {
+  text-align: center;
+  height: auto;
+}
+
+.member-image {
+  height: 500px;
+  overflow: hidden;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 0.64;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-header h3 {
+  font-size: 1.3rem;
+  color: #2d5016;
+  margin-bottom: 0.5rem;
+}
+
+.member-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.member-btn {
+  background: transparent;
+  color: #2d5016;
+  border: 2px solid #2d5016;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.member-btn:hover {
+  background: #2d5016;
+  color: white;
+}
+
+.coaching-card {
+  background: #2d5016;
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  text-align: left;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.coaching-card-text h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.coaching-card-text p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+.coaching-card .btn-primary {
+  background: white;
+  color: #2d5016;
+  border-radius: 25px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  width: 50%;
+}
+
+.coaching-card .btn-primary:hover {
+  background: #f0f0f0;
+}

@@ -1,0 +1,156 @@
+.statistics {
+  background-color: #0F2E16;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 0;
+  margin: 0;
+}
+
+.statistics-container {
+  width: 100%;
+  max-width: 75rem;
+  padding: 0 1rem;
+}
+
+.statistics-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.statistics-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.5rem, 4vw, 2.5rem);
+  flex-wrap: nowrap;
+  padding: 0 1rem;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.stat-item {
+  text-align: left;
+  flex: 0 0 auto;
+  min-width: 100px;
+}
+
+.stat-number {
+  color: #E6EDDF;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.stat-value {
+  font-weight: 700;
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
+  color: #E6EDDF;
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+.stat-unit {
+  font-weight: 700;
+  font-size: clamp(0.875rem, 3vw, 1.75rem);
+  color: #A4BF86;
+  margin-left: 0.125rem;
+}
+
+.stat-label {
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  color: #E6EDDF;
+  font-weight: 400;
+  margin-top: 0.25rem;
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+.stat-divider {
+  width: 0.125rem;
+  height: 3rem;
+  background: #A4BF86;
+  margin: 0 clamp(0.75rem, 3vw, 1.5rem);
+  border-radius: 0.0625rem;
+  display: block;
+  flex-shrink: 0;
+}
+
+.statistics-text {
+  max-width: 21.25rem;
+  margin-left: 0;
+  flex: 1;
+}
+
+.statistics-text p {
+  color: #E6EDDF;
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+/* For tablets */
+@media (max-width: 56.25rem) {
+  .statistics-content {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .statistics-text {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 32rem) {
+  .statistics-stats {
+    gap: 1rem; /* reduce space */
+    padding: 0 0.5rem; /* tighter padding */
+  }
+
+  .stat-value {
+    font-size: 1.75rem;
+  }
+
+  .stat-unit {
+    font-size: 1rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+
+  .stat-divider {
+    height: 2rem;
+    margin: 0 0.5rem;
+  }
+}
+
+/* For very small phones, 375px and below */
+@media (max-width: 23.5rem) {
+  .statistics-stats {
+    gap: 0.5rem;
+    padding: 0 0.25rem;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .stat-unit {
+    font-size: 0.875rem;
+  }
+
+  .stat-label {
+    font-size: 0.6875rem;
+  }
+}
