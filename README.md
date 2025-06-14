@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vital Balance
 
 A modern wellness and fitness web application built with React and Vite.
@@ -64,3 +65,6 @@ src/
 
 ## License
 This project is licensed under the MIT License.
+=======
+# Sapphire-Broking-Task
+>>>>>>> ce29c56735fc65ed326ae5c86119d5ffa8bfad42
